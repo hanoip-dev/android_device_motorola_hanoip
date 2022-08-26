@@ -19,20 +19,16 @@ BOARD_BOOT_HEADER_VERSION := 3
 include device/motorola/sm6150-common/PlatformConfig.mk
 
 # Kernel
-TARGET_PREBUILT_KERNEL := device/motorola/sm6150-common-kernel/sm6150-moto-Image.gz
+TARGET_KERNEL_ARCH := arm64
+TARGET_KERNEL_SOURCE := kernel/motorola/sm6150
+TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_CONFIG := hanoip_defconfig
+TARGET_KERNEL_CLANG_VERSION := r428724
 
 TARGET_BOOTLOADER_BOARD_NAME := hanoip
 
 # Platform
 PRODUCT_PLATFORM := sm6150
-
-# Kernel DTB/DTBO
-BOARD_PREBUILT_DTBIMAGE_DIR := device/motorola/sm6150-common-kernel/dtb
-BOARD_PREBUILT_DTBOIMAGE := device/motorola/sm6150-common-kernel/dtbo.img
-
-# Kernel Modules
-BOARD_VENDOR_KERNEL_MODULES := \
-    $(wildcard device/motorola/sm6150-common-kernel/modules/*.ko)
 
 # Partition information
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
