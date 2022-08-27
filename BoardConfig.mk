@@ -25,6 +25,9 @@ TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CONFIG := hanoip_defconfig
 TARGET_KERNEL_CLANG_VERSION := r428724
 
+# Pick Kernel Headers from Source
+TARGET_COMPILE_WITH_MSM_KERNEL := true
+
 TARGET_BOOTLOADER_BOARD_NAME := hanoip
 
 # Platform
