@@ -44,6 +44,14 @@ AB_OTA_PARTITIONS += \
 PRODUCT_PACKAGES += \
     SettingsOverlayRefreshRate
 
+# Gcam
+PRODUCT_PACKAGES += \
+    GoogleCameraGo
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/GoogleCameraGo/permissions/com.google.android.GoogleCameraGo.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.google.android.GoogleCameraGo.xml \
+    $(LOCAL_PATH)/GoogleCameraGo/configs/hiddenapi-package-whitelist-GoogleCameraGo.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/hiddenapi-package-whitelist-GoogleCameraGo.xml
+
 # Telephony Packages (AOSP)
 PRODUCT_PACKAGES += \
     InCallUI \
