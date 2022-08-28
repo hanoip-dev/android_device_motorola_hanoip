@@ -145,6 +145,9 @@ vendor/firmware/aw882xx_monitor.bin
 vendor/firmware/aw882xx_rcv_reg.bin
 vendor/firmware/aw882xx_spk_reg.bin
 
+#NFC
+vendor/lib64/libpn557_fw.so
+
 # Sensors
 vendor/lib64/sensors.ssc.so
 
