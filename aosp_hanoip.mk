@@ -16,16 +16,9 @@
 $(call inherit-product, device/motorola/hanoip/device.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
-# Inherit some common ArrowOS stuff
-$(call inherit-product, vendor/arrow/config/common.mk)
-
-TARGET_BOOT_ANIMATION_RES := 1080
-DEVICE_MAINTAINER := blacklytning
-
-PRODUCT_NAME := arrow_hanoip
+PRODUCT_NAME := aosp_hanoip
 PRODUCT_DEVICE := hanoip
-PRODUCT_MODEL := moto g60 (Arrow)
+PRODUCT_MODEL := moto g60 (AOSP)
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
