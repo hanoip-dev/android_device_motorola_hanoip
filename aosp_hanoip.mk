@@ -15,10 +15,20 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/motorola/hanoip/device.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
+
+# Inherit some common AOSP stuff.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
+
+# Inherit some common PixelExperience stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
+
 
 PRODUCT_NAME := aosp_hanoip
 PRODUCT_DEVICE := hanoip
-PRODUCT_MODEL := moto g60 (AOSP)
+PRODUCT_MODEL := moto g60
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
