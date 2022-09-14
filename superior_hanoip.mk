@@ -21,13 +21,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-# Inherit some common PixelExperience stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common SuperiorOS stuffs
+$(call inherit-product, vendor/superior/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_GAPPS_ARCH := arm64
 
-
-PRODUCT_NAME := aosp_hanoip
+# Device
+PRODUCT_NAME := superior_hanoip
 PRODUCT_DEVICE := hanoip
 PRODUCT_MODEL := moto g60
 PRODUCT_BRAND := motorola
