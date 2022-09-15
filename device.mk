@@ -44,6 +44,11 @@ AB_OTA_PARTITIONS += \
 PRODUCT_PACKAGES += \
     SettingsOverlayRefreshRate
 
+# Overlay
+PRODUCT_PACKAGES += \
+    hanoipFrameworkOverlay \
+    hanoipSystemUIOverlay
+
 # Telephony Packages (AOSP)
 PRODUCT_PACKAGES += \
     InCallUI \
