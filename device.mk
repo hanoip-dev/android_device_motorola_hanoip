@@ -64,6 +64,10 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_PROPERTY_OVERRIDES := \
     ro.sf.lcd_density=400
 
+# MotoActions
+PRODUCT_PACKAGES += \
+    MotoActions
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/motorola/sm6150-common/platform.mk)
 
