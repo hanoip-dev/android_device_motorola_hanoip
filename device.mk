@@ -55,6 +55,20 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qmi_fw.conf:$(TARGET_COPY_OUT_VENDOR)/etc/qmi_fw.conf
 
+# GPS
+PRODUCT_PACKAGES += \
+    apdr.conf \
+    flp.conf \
+    gps.conf \
+    gnss_antenna_info.conf \
+    izat.conf \
+    lowi.conf \
+    sap.conf \
+    xtwifi.conf
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml
+
 # Overlay
 PRODUCT_PACKAGES += \
     hanoipFrameworkOverlay \
