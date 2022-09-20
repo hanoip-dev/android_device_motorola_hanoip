@@ -24,6 +24,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # Inherit some common SuperiorOS stuffs
 $(call inherit-product, vendor/superior/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
+SUPERIOR_GAPPS := minimal
 
 # Device
 PRODUCT_NAME := superior_hanoip
